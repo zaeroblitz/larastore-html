@@ -16,6 +16,37 @@
   </head>
 
   <body>
+    <nav
+      class="navbar navbar-store navbar-expand-lg navbar-light fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <img src="images/logo.svg" alt="Logo" width="40px" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="categories.html">Categories</a>
+            <a class="nav-link disabled">Rewards</a>
+            <a class="nav-link" href="register.html">Sign Up</a>
+            <a class="btn btn-success text-white px-4 ml-2" href="login.html"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.slim.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -23,5 +54,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="scripts/navbar-scroll.js"></script>
   </body>
 </html>
