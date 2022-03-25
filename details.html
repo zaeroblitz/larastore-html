@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Store - Your Best Marketplace</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="icons/logo.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-store navbar-expand-lg navbar-light fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+      aria-label="navbar"
+    >
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="Logo" width="40px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav align-items-lg-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+
+              <li class="nav-item disabled">
+                <a class="nav-link">Rewards</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="row align-items-center">
+                    <img
+                      src="images/user_pc.png"
+                      alt="avatar"
+                      class="profile-picture d-none d-lg-flex"
+                    />
+                    <div class="ml-2 nav-user-welcome">
+                      <p class="mb-0 ml-2">Hi, Zaero Blitz</p>
+                    </div>
+                  </div>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Dashboard</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item text-danger" href="#">Sign Out</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/shopping.svg"
+                    alt="Shopping"
+                    class="d-none d-lg-flex"
+                  />
+                  <p class="d-flex d-lg-none">Cart</p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-content">
+      <div class="container">
+        <section
+          class="section-breadcrumbs"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Product Details
+              </li>
+            </ol>
+          </nav>
+        </section>
+
+        <section class="section-gallery" id="gallery">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9" data-aos="zoom-in">
+                <transition name="slide-fade" mode="out-in">
+                  <img
+                    :src="photos[activePhoto].url"
+                    :key="photos[activePhoto].id"
+                    class="w-100 main-image"
+                    alt=""
+                  />
+                </transition>
+              </div>
+              <div class="col-lg-3">
+                <div class="row justify-content-end">
+                  <div
+                    class="col-3 col-lg-12 mt-2 mt-lg-0"
+                    v-for="(photo, index) in photos"
+                    :key="photo.id"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <a href="#" @click="changeActive(index)">
+                      <img
+                        :src="photo.url"
+                        class="thumbnail-image"
+                        :class="{ active: index == activePhoto }"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p class="text-center">
+        <span id="currentYear"></span> Copyright Store. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      $(".carousel").carousel({
+        interval: 5000,
+      });
+
+      const getDate = new Date();
+      const getFullYear = getDate.getFullYear();
+
+      const currentYear = document.getElementById("currentYear");
+      currentYear.textContent = getFullYear;
+    </script>
+    <script src="vendor/vue/vue.js"></script>
+    <script>
+      let gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 0,
+          photos: [
+            {
+              id: 1,
+              url: "images/detail_product_1.png",
+            },
+            {
+              id: 2,
+              url: "images/detail_product_2.png",
+            },
+            {
+              id: 3,
+              url: "images/detail_product_3.png",
+            },
+            {
+              id: 4,
+              url: "images/detail_product_4.png",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
+    </script>
+    <script src="scripts/navbar-scroll.js"></script>
+  </body>
+</html>

@@ -7,8 +7,8 @@
 
   .categories-item {
     background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 24px 20px;
     cursor: pointer;
 
     &:hover {
@@ -23,13 +23,13 @@
     .category-item-icon {
       width: 76px;
       height: 76px;
-      object-fit: cover;
       margin-bottom: 16px;
     }
 
     p {
       color: #333;
       font-size: 18px;
+      margin-bottom: 0px;
       text-decoration: none;
       text-align: center;
     }

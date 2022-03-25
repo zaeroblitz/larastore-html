@@ -9,17 +9,18 @@
     margin-bottom: 12px;
 
     .new-product-image {
-      object-fit: cover;
       border-radius: 20px;
       overflow: hidden;
 
-      &:hover {
+      :hover {
         transform: scale(1.05);
       }
 
       img {
         width: 216px;
         height: 140px;
+        border-radius: 20px;
+        overflow: hidden;
       }
     }
 
