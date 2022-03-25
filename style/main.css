@@ -10907,9 +10907,103 @@ footer p {
   margin-left: -10px;
 }
 
-.navbar-store .navbar-fixed-top .scrolled {
+.navbar-fixed-top .scrolled {
   background-color: #fff !important;
   -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
+}
+
+.carousel-item {
+  border-radius: 20px;
+}
+
+.component-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.section-categories {
+  margin-top: 30px;
+}
+
+.section-categories a {
+  text-decoration: none;
+}
+
+.section-categories .categories-item {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.section-categories .categories-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 991.98px) {
+  .section-categories .categories-item {
+    margin-bottom: 12px;
+  }
+}
+
+.section-categories .categories-item .category-item-icon {
+  width: 76px;
+  height: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.section-categories .categories-item p {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.section-new-products {
+  margin-top: 30px;
+}
+
+.section-new-products a:hover {
+  text-decoration: none;
+}
+
+.section-new-products .new-products-item {
+  margin-bottom: 12px;
+}
+
+.section-new-products .new-products-item .new-product-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section-new-products .new-products-item .new-product-image:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.section-new-products .new-products-item .new-product-image img {
+  width: 216px;
+  height: 140px;
+}
+
+.section-new-products .new-products-item .new-product-name {
+  color: #333;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.section-new-products .new-products-item .new-product-price {
+  color: #ff7158;
+  font-size: 18px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
