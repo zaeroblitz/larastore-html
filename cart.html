@@ -323,7 +323,7 @@
               <div class="payment-sub-title">Total</div>
             </div>
             <div class="col-12 col-md-12 col-lg-2 ml-lg-2 mt-4 mt-md-4 mt-lg-0">
-              <a href="#" class="btn btn-success d-block d-md-block"
+              <a href="success.html" class="btn btn-success d-block d-md-block"
                 >Checkout Now</a
               >
             </div>
@@ -344,50 +344,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      $(".carousel").carousel({
-        interval: 5000,
-      });
-
       const getDate = new Date();
       const getFullYear = getDate.getFullYear();
 
       const currentYear = document.getElementById("currentYear");
       currentYear.textContent = getFullYear;
-    </script>
-    <script src="vendor/vue/vue.js"></script>
-    <script>
-      let gallery = new Vue({
-        el: "#gallery",
-        mounted() {
-          AOS.init();
-        },
-        data: {
-          activePhoto: 0,
-          photos: [
-            {
-              id: 1,
-              url: "images/detail_product_1.png",
-            },
-            {
-              id: 2,
-              url: "images/detail_product_2.png",
-            },
-            {
-              id: 3,
-              url: "images/detail_product_3.png",
-            },
-            {
-              id: 4,
-              url: "images/detail_product_4.png",
-            },
-          ],
-        },
-        methods: {
-          changeActive(id) {
-            this.activePhoto = id;
-          },
-        },
-      });
     </script>
     <script src="scripts/navbar-scroll.js"></script>
   </body>

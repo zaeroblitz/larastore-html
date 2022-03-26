@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Store - Your Best Marketplace</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="icons/logo.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-success">
+      <div class="container">
+        <div class="row">
+          <img
+            src="images/illust_success.svg"
+            alt="illustration"
+            class="mx-auto"
+          />
+        </div>
+
+        <div class="row">
+          <h4 class="col-12 mx-auto text-center">Transaction Processed!</h4>
+          <p class="col-12 mx-auto text-center">
+            Silahkan tunggu konfirmasi email dari kami dan<br />kami akan
+            menginformasikan resi secepat mungkin!
+          </p>
+        </div>
+
+        <div class="row">
+          <a href="#" class="col-3 btn btn-success mx-auto">My Dashboard</a>
+        </div>
+
+        <div class="row mt-2">
+          <a href="index.html" class="col-3 btn btn-secondary mx-auto"
+            >Back to Homepage</a
+          >
+        </div>
+
+        <footer>
+          <p class="text-center">
+            <span id="currentYear"></span> Copyright Store. All Rights Reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const getDate = new Date();
+      const getFullYear = getDate.getFullYear();
+
+      const currentYear = document.getElementById("currentYear");
+      currentYear.textContent = getFullYear;
+    </script>
+    <script src="scripts/navbar-scroll.js"></script>
+  </body>
+</html>
