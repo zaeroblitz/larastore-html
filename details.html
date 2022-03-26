@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <div class="navbar-nav ml-auto">
             <ul class="navbar-nav align-items-lg-center">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
 
@@ -114,8 +114,8 @@
 
         <section class="section-gallery" id="gallery">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-9" data-aos="zoom-in">
+            <div class="row justify-content-around">
+              <div class="col-12 col-lg-9" data-aos="zoom-in">
                 <transition name="slide-fade" mode="out-in">
                   <img
                     :src="photos[activePhoto].url"
@@ -126,7 +126,7 @@
                 </transition>
               </div>
               <div class="col-lg-3">
-                <div class="row justify-content-end">
+                <div class="row">
                   <div
                     class="col-3 col-lg-12 mt-2 mt-lg-0"
                     v-for="(photo, index) in photos"
@@ -143,6 +143,106 @@
                       />
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-description mb-4" data-aos="fade-up">
+          <div class="row">
+            <div class="col-12 col-md-9 section-description-group">
+              <h4 class="product-name col-12">Sofa Ternyaman</h4>
+              <p class="product-seller col-12">By Galih Pratama</p>
+              <p class="product-price col-12">$1,409</p>
+              <p class="product-description col-12 col-lg-10">
+                The Nike Air Max 720 SE goes bigger than ever before with Nike's
+                tallest Air unit yet for unimaginable, all-day comfort. There's
+                super breathable fabrics on the upper, while colours add a
+                modern edge. <br />Bring the past into the future with the Nike
+                Air Max 2090, a bold look inspired by the DNA of the iconic Air
+                Max 90. Brand-new Nike Air cushioning underfoot adds
+                unparalleled comfort while transparent mesh and vibrantly
+                coloured details on the upper are blended with timeless OG
+                features for an edgy, modernised look.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 mb-4">
+              <a href="cart.html" class="btn btn-success d-block"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <section class="section-user-reviews mt-2" data-aos="fade-up">
+          <h4 class="component-header">Customer Reviews (3)</h4>
+          <div class="user-review-item">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <img
+                  src="images/user_1.png"
+                  alt="user"
+                  class="user-review-avatar w-100 rounded-circle"
+                />
+              </div>
+              <div class="col-9 col-lg-6 user-review-group">
+                <div class="col-12">
+                  <p class="user-review-name">Hazza Rizky</p>
+                </div>
+                <div class="col-12">
+                  <p class="user-review">
+                    I thought it was not good for living room. I really happy to
+                    decided buy this product last week now feels like homey.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-review-item">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <img
+                  src="images/user_pc.png"
+                  alt="user"
+                  class="user-review-avatar w-100 rounded-circle"
+                />
+              </div>
+              <div class="col-9 col-lg-6 user-review-group">
+                <div class="col-12">
+                  <p class="user-review-name">Anna Sukkirata</p>
+                </div>
+                <div class="col-12">
+                  <p class="user-review">
+                    Color is great with the minimalist concept. Even I thought
+                    it was made by Cactus industry. I do really satisfied with
+                    this.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-review-item">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <img
+                  src="images/user_2.png"
+                  alt="user"
+                  class="user-review-avatar w-100 rounded-circle"
+                />
+              </div>
+              <div class="col-9 col-lg-6 user-review-group">
+                <div class="col-12">
+                  <p class="user-review-name">Sefi Raiado</p>
+                </div>
+                <div class="col-12">
+                  <p class="user-review">
+                    When I saw at first, it was really awesome to have with.
+                    Just let me know if there is another upcoming product like
+                    this.
+                  </p>
                 </div>
               </div>
             </div>
