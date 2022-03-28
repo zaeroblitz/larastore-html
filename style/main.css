@@ -11423,6 +11423,115 @@ footer p {
   font-weight: 300;
 }
 
+.page-dashboard .sidebar-collapse {
+  height: auto !important;
+}
+
+.page-dashboard .navbar-user {
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+}
+
+.page-dashboard .profile-picture {
+  padding: 0px;
+  width: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page-dashboard .card-badge {
+  display: inline-block;
+  min-width: 2em;
+  padding: 0.3em;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  background-color: #29a867;
+  color: #fefefe;
+  margin-left: -10px;
+}
+
+.page-dashboard .dashboard-header {
+  margin-bottom: 24px;
+}
+
+.page-dashboard .dashboard-summary {
+  margin-bottom: 24px;
+}
+
+.page-dashboard .dashboard-summary .card-summary {
+  padding: 24px;
+}
+
+.page-dashboard .dashboard-summary .card-summary .text-muted {
+  color: #c5c5c5;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.page-dashboard .dashboard-summary .card-summary h4 {
+  color: #333533;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product {
+  padding: 12px;
+  color: #212529;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product:hover {
+  color: #212529;
+  background-color: #ececec;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product:focus, .page-dashboard .dashboard-transactions .card-transaction-product.focus {
+  color: #212529;
+  background-color: #ececec;
+  border-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product.disabled, .page-dashboard .dashboard-transactions .card-transaction-product:disabled {
+  color: #212529;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product:not(:disabled):not(.disabled):active, .page-dashboard .dashboard-transactions .card-transaction-product:not(:disabled):not(.disabled).active,
+.show > .page-dashboard .dashboard-transactions .card-transaction-product.dropdown-toggle {
+  color: #212529;
+  background-color: #e6e6e6;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product:not(:disabled):not(.disabled):active:focus, .page-dashboard .dashboard-transactions .card-transaction-product:not(:disabled):not(.disabled).active:focus,
+.show > .page-dashboard .dashboard-transactions .card-transaction-product.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.page-dashboard .dashboard-transactions .card-transaction-product p {
+  color: #333533;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .section-new-products {
   margin-top: 30px;
 }
